@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.scss">
+  <title>Trivia App</title>
+</head>
+<body>
+  <div class="container">
+    <form id="trivia-form">
+        <div class="form__field">
+            <label for="difficulty">Dificultad:</label>
+            <select id="difficulty" name="difficulty">
+              <option value="easy">Fácil</option>
+              <option value="medium">Medio</option>
+              <option value="hard">Difícil</option>
+            </select>
+        </div>
+
+      <div class="form__field">
+        <label for="type">Tipo de respuesta:</label>
+        <select id="type" name="type">
+          <option value="multiple">Múltiple</option>
+          <option value="boolean">Verdadero/Falso</option>
+        </select>
+      </div>
+
+      <div class="form__field">
+        <label for="category">Categoría:</label>
+        <select id="category" name="category">
+          <!-- Agrega las opciones de categoría aquí -->
+        </select>
+      </div>
+      <button type="submit">Crear Trivia</button>
+    </form>
+    <div id="score-container">Puntaje: <span id="score">0</span></div>
+    <!-- <div id="share-container">
+        <button id="share-button">Compartir puntaje en redes sociales "boton en mantenimiento no usar"</button>
+      </div>       -->
+    <div id="trivia-container"></div>
+    <button id="new-trivia" style="display: none;">Nueva Trivia</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
